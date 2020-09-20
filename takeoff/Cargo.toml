@@ -1,0 +1,29 @@
+# https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[package]
+name = "takeoff"
+description = "\"Bring-your-own-site\" static site generator."
+version = "0.1.0"
+authors = ["Bauke <me@bauke.xyz>"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/Bauke/takeoff"
+edition = "2018"
+
+[lib]
+path = "source/lib.rs"
+
+[dependencies]
+anyhow = "1.0"
+glob = "0.3"
+grass = "0.10"
+pulldown-cmark = "0.8"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+syntect = "4.4"
+tera = "1.5"
+toml = "0.5"
+tracing = "0.1"
+walkdir = "2.3"
+
+[dev-dependencies]
+tracing-subscriber = "0.2"

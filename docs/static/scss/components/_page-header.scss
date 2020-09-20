@@ -1,0 +1,47 @@
+.page-header {
+  background: linear-gradient(45deg, var(--la-7), var(--la-8), var(--la-9), var(--la-10));
+
+  .container {
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    max-width: $large-breakpoint * 0.75;
+  }
+
+  h1 {
+    margin-right: auto;
+
+    a {
+      background-color: transparent;
+      border: none;
+      padding: 0;
+
+      &:hover {
+        background-color: transparent;
+        color: var(--df-1);
+      }
+    }
+  }
+
+  a {
+    border: 1px solid var(--df-1);
+    color: var(--df-1);
+    font-weight: bold;
+    padding: 8px 8px 6px;
+
+    &:hover {
+      background-color: var(--df-1);
+      color: var(--db-1);
+    }
+  }
+
+  .navigation {
+    display: flex;
+    gap: 8px;
+    list-style: none;
+
+    a {
+      width: 7.5rem;
+    }
+  }
+}

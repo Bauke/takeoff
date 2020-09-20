@@ -1,0 +1,100 @@
+@import 'variables';
+
+.page-main {
+  @include responsive-container;
+  padding: 16px 0;
+
+  h2 {
+    border-bottom: 2px solid var(--da-3);
+    padding: 16px;
+  }
+
+  p {
+    font-size: 1.75rem;
+  }
+}
+
+.features,
+.page-main {
+  > * {
+    margin-bottom: 16px;
+  }
+}
+
+.blurb,
+.features {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.blurb {
+  border-bottom: 2px solid var(--da-3);
+  padding: 16px;
+  text-align: justify;
+
+  > :not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+.get-started {
+  text-align: center;
+
+  a {
+    background: radial-gradient(circle at top left, var(--la-1), var(--la-7));
+    box-shadow: 4px 4px 0 0 var(--db-1);
+    color: var(--df-1);
+    font-size: 1.75rem;
+    font-weight: bold;
+    padding: 16px;
+    min-width: 20%;
+
+    &:hover {
+      filter: contrast(125%);
+    }
+  }
+}
+
+.features {
+  ul {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+    list-style: none;
+
+
+    @media (max-width: $medium-breakpoint) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  li {
+    box-shadow: 4px 4px 0 0 var(--db-1);
+
+    /* stylelint-disable-next-line order/order */
+    $gradients: 1 1 9, 2 4 7, 3 9 8, 4 2 1, 5 7 2;
+
+    @each $index, $one, $two in $gradients {
+      &:nth-child(#{$index}) {
+        background: linear-gradient(45deg, var(--la-#{$one}), var(--la-#{$two}));
+      }
+    }
+
+    &:hover {
+      filter: contrast(125%);
+    }
+
+    a {
+      color: var(--df-1);
+      display: block;
+      font-size: 2rem;
+      font-weight: bold;
+      padding: 16px;
+
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+}

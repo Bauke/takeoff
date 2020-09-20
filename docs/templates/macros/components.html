@@ -1,0 +1,73 @@
+{% macro page_header(title="Takeoff") %}
+<header class="page-header">
+  <div class="container">
+    <h1>
+      <a href="/">{{ title }}</a>
+    </h1>
+
+    <ul class="navigation">
+      <li>
+        <a href="/get-started">Docs</a>
+      </li>
+      <li>
+        <a href="https://github.com/Bauke/takeoff">Source</a>
+      </li>
+    </ul>
+  </div>
+</header>
+{% endmacro page_header %}
+
+{% macro page_sidebar(active="") %}
+
+{% set docs = documents |
+  filter(attribute="metadata.extra.sidebar") |
+  sort(attribute="metadata.extra.sidebar.index")
+%}
+
+<aside class="page-sidebar">
+  <ul>
+    <li>
+      <p class="list-header">Getting Started</p>
+      <ul>
+        {% for doc in docs %}
+        {% if doc.metadata.extra.sidebar.header == "get-started" %}
+
+        {% set slug = doc.metadata.extra.sidebar.slug %}
+        {% set title = doc.metadata.extra.sidebar.title %}
+        <li>
+          <a href="/get-started/{{ slug }}"
+            {% if active == slug %}class="active"{% endif %}
+          >{{ title }}</a>
+        </li>
+
+        {% endif %}
+        {% endfor %}
+      </ul>
+    </li>
+    <li>
+      <p class="list-header">Documentation</p>
+      <ul>
+        {% for doc in docs %}
+        {% if doc.metadata.extra.sidebar.header == "documentation" %}
+
+        {% set slug = doc.metadata.extra.sidebar.slug %}
+        {% set title = doc.metadata.extra.sidebar.title %}
+        <li>
+          <a href="/docs/{{ slug }}"
+            {% if active == slug %}class="active"{% endif %}
+          >{{ title }}</a>
+        </li>
+
+        {% endif %}
+        {% endfor %}
+      </ul>
+    </li>
+  </ul>
+</aside>
+{% endmacro page_sidebar %}
+
+{% macro page_footer() %}
+<footer class="page-footer">
+  <p>&copy; Bauke &mdash; Built with Takeoff. ;)</p>
+</footer>
+{% endmacro page_footer %}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% if metadata.is_draft %}
+  {% set title_prefix = "[DRAFT] " %}
+  {% else %}
+  {% set title_prefix = "" %}
+  {% endif %}
+  {% if extra.title %}
+  <title>{{ title_prefix }}{{ extra.title }}</title>
+  {% else %}
+  <title>{{ title_prefix }}Takeoff</title>
+  {% endif %}
+
+  <link rel="stylesheet" href="/css/modern-normalize.css">
+  <link rel="stylesheet" href="/css/common.css">
+  {% block head %}{% endblock %}
+</head>
+
+<body class="love">
+  {% block body %}{% endblock %}
+</body>
+
+</html>

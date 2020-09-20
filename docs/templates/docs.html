@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% import "macros/components.html" as components %}
+
+{% block head %}
+<link rel="stylesheet" href="/css/docs.css">
+{% endblock %}
+
+{% block body %}
+{{ components::page_header() }}
+
+<div class="page-with-sidebar">
+  {{ components::page_sidebar(active=extra.sidebar.slug) }}
+
+  {{ document.content | safe }}
+</div>
+
+{{ components::page_footer() }}
+{% endblock %}

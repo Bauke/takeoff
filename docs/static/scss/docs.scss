@@ -1,0 +1,26 @@
+@import 'variables';
+
+.page-main {
+  > :not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+.info {
+  background: radial-gradient(circle at bottom left, var(--la-7), var(--la-9));
+  box-shadow: 4px 4px 0 0 var(--db-1);
+  color: var(--df-1);
+  display: flex;
+  margin-right: 4px;
+  padding: 16px;
+
+  &::before {
+    content: '🛈';
+    font-size: 2rem;
+    margin-right: 8px;
+  }
+
+  a {
+    font-weight: bold;
+  }
+}

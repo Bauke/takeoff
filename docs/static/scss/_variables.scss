@@ -1,0 +1,14 @@
+$small-breakpoint: 600px;
+$medium-breakpoint: 900px;
+$large-breakpoint: 1200px;
+$extra-large-breakpoint: 1800px;
+
+@mixin responsive-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: $large-breakpoint;
+
+  @media (max-width: $large-breakpoint) {
+    width: 100%;
+  }
+}

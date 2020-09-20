@@ -1,0 +1,48 @@
+.page-with-sidebar {
+  @include responsive-container;
+  display: grid;
+  grid-template-columns: 20% 80%;
+
+  .page-main {
+    width: 100%;
+  }
+
+  @media (max-width: $medium-breakpoint) {
+    display: unset;
+  }
+}
+
+.page-sidebar {
+  background-color: var(--db-2);
+  margin-bottom: 32px;
+  margin-right: 16px;
+  padding: 16px;
+
+  @media (max-width: $medium-breakpoint) {
+    margin-right: 0;
+  }
+
+  ul {
+    margin-bottom: 16px;
+    list-style: none;
+
+    a {
+      display: block;
+      padding: 4px;
+    }
+  }
+
+  li > ul {
+    border-left: 2px solid var(--db-1);
+    padding-left: 8px;
+  }
+
+  .active {
+    border-bottom: 1px solid var(--da-3);
+    font-weight: bold;
+  }
+
+  .list-header {
+    margin-bottom: 8px;
+  }
+}

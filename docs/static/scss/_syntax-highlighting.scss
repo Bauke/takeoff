@@ -1,0 +1,253 @@
+.code-code {
+  background-color: var(--db-2);
+  color: var(--df-1);
+}
+
+.code-comment {
+  color: var(--dg-3);
+}
+
+.code-meta.code-documentation {
+  color: var(--dg-3);
+}
+
+.code-string {
+  color: var(--da-5);
+}
+
+.code-string.code-regexp {
+  color: var(--da-5);
+}
+
+.code-constant.code-character.code-escape {
+  color: var(--da-1);
+}
+
+.code-constant.code-numeric {
+  color: var(--da-9);
+}
+
+.code-variable {
+  color: var(--da-7);
+}
+
+.code-variable.code-function {
+  color: var(--da-3);
+}
+
+.code-variable.code-language {
+  color: var(--da-10);
+}
+
+.code-keyword {
+  color: var(--da-4);
+}
+
+.code-meta.code-import {
+  color: var(--da-2);
+}
+
+.code-keyword.code-control.code-import {
+  color: var(--da-2);
+}
+
+.code-keyword.code-control.code-import.code-from {
+  color: var(--da-2);
+}
+
+.code-keyword.code-other.code-import {
+  color: var(--da-2);
+}
+
+.code-keyword.code-control.code-at-rule.code-include {
+  color: var(--da-2);
+}
+
+.code-keyword.code-control.code-at-rule.code-import {
+  color: var(--da-2);
+}
+
+.code-keyword.code-operator.code-comparison {
+  color: var(--dg-2);
+}
+
+.code-keyword.code-operator.code-assignment {
+  color: var(--dg-2);
+}
+
+.code-keyword.code-operator.code-arithmetic {
+  color: var(--dg-2);
+}
+
+.code-storage {
+  color: var(--da-4);
+}
+
+.code-storage.code-modifier {
+  color: var(--dg-2);
+}
+
+.code-keyword.code-control.code-class {
+  color: var(--da-3);
+}
+
+.code-entity.code-name {
+  color: var(--da-3);
+}
+
+.code-entity.code-name.code-class {
+  color: var(--da-3);
+}
+
+.code-entity.code-name.code-type.code-class {
+  color: var(--da-3);
+}
+
+.code-entity.code-other.code-inherited-class {
+  color: var(--da-7);
+}
+
+.code-entity.code-other.code-attribute-name {
+  color: var(--da-3);
+}
+
+.code-support {
+  color: var(--da-4);
+}
+
+.code-support.code-type {
+  color: var(--da-4);
+}
+
+.code-support.code-class {
+  color: var(--da-4);
+}
+
+.code-entity.code-name.code-function {
+  color: var(--da-3);
+}
+
+.code-punctuation.code-definition.code-variable {
+  color: var(--da-4);
+}
+
+.code-constant {
+  color: var(--da-3);
+}
+
+.code-constant.code-language {
+  color: var(--da-3);
+}
+
+.code-meta.code-preprocessor {
+  color: var(--da-3);
+}
+
+.code-entity.code-name.code-section {
+  color: var(--da-2);
+}
+
+.code-support.code-function.code-construct {
+  color: var(--da-1);
+}
+
+.code-keyword.code-other.code-new {
+  color: var(--da-1);
+}
+
+.code-constant.code-character {
+  color: var(--da-2);
+}
+
+.code-constant.code-other {
+  color: var(--da-2);
+}
+
+.code-entity.code-name.code-tag {
+  color: var(--da-7);
+}
+
+.code-punctuation.code-definition.code-tag.code-html {
+  color: var(--dg-3);
+}
+
+.code-punctuation.code-definition.code-tag.code-begin {
+  color: var(--dg-3);
+}
+
+.code-punctuation.code-definition.code-tag.code-end {
+  color: var(--dg-3);
+}
+
+.code-support.code-function {
+  color: var(--da-4);
+}
+
+.code-punctuation.code-separator.code-continuation {
+  color: var(--da-1);
+}
+
+.code-storage.code-type {
+  color: var(--da-7);
+}
+
+.code-support.code-type.code-exception {
+  color: var(--da-2);
+}
+
+.code-keyword.code-other.code-special-method {
+  color: var(--da-2);
+}
+
+.code-invalid {
+  background-color: var(--da-1);
+}
+
+.code-string.code-quoted.code-double {
+  color: var(--da-5);
+}
+
+.code-string.code-quoted.code-single {
+  color: var(--da-5);
+}
+
+.code-punctuation.code-definition.code-string {
+  color: var(--df-1);
+}
+
+.code-meta.code-brace.code-square {
+  color: var(--da-7);
+}
+
+.code-punctuation.code-section.code-brackets {
+  color: var(--da-7);
+}
+
+.code-meta.code-brace.code-round {
+  color: var(--dg-2);
+}
+
+.code-meta.code-brace.code-curly {
+  color: var(--dg-2);
+}
+
+.code-punctuation.code-section {
+  color: var(--dg-2);
+}
+
+.code-punctuation.code-section.code-block {
+  color: var(--dg-2);
+}
+
+.code-punctuation.code-definition.code-parameters {
+  color: var(--dg-2);
+}
+
+.code-punctuation.code-section.code-group {
+  color: var(--dg-2);
+}
+
+.code-support.code-constant.code-color {
+  color: var(--da-3);
+}
+

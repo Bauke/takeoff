@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% import "macros/components.html" as components %}
+
+{% block body %}
+{{ components::page_header() }}
+
+{{ document.content | safe }}
+
+{{ document | json_dump | safe }}
+
+{{ components::page_footer() }}
+{% endblock %}

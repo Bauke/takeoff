@@ -1,0 +1,41 @@
+{
+  "name": "takeoff",
+  "description": "Bring-your-own-site static site generator.",
+  "version": "0.1.0",
+  "author": "Bauke <me@bauke.xyz>",
+  "homepage": "https://takeoff.bauke.xyz",
+  "repository": "https://github.com/Bauke/takeoff",
+  "license": "MIT OR Apache-2.0",
+  "scripts": {
+    "test": "stylelint 'docs/static/scss/**/*.scss'"
+  },
+  "dependencies": {
+    "modern-normalize": "^1.0.0"
+  },
+  "devDependencies": {
+    "husky": "^4.3.0",
+    "stylelint": "^13.7.1",
+    "stylelint-config-xo-scss": "^0.13.0",
+    "stylelint-config-xo-space": "^0.14.0"
+  },
+  "stylelint": {
+    "extends": [
+      "stylelint-config-xo-scss",
+      "stylelint-config-xo-space"
+    ],
+    "ignoreFiles": [
+      "docs/static/scss/modern-normalize.scss"
+    ],
+    "rules": {
+      "at-rule-empty-line-before": null,
+      "at-rule-no-unknown": null,
+      "no-descending-specificity": null
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "cargo test && yarn test",
+      "pre-push": "cargo test && yarn test"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% import "macros/components.html" as components %}
+
+{% block head %}
+<link rel="stylesheet" href="/css/homepage.css">
+{% endblock %}
+
+{% block body %}
+{{ components::page_header() }}
+
+{{ document.content | safe }}
+
+{{ components::page_footer() }}
+{% endblock %}
