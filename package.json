@@ -7,13 +7,16 @@
   "repository": "https://github.com/Bauke/takeoff",
   "license": "MIT OR Apache-2.0",
   "scripts": {
-    "test": "stylelint 'docs/static/scss/**/*.scss'"
+    "test": "stylelint 'docs/static/scss/**/*.scss'",
+    "deploy": "rm -rf 'public/' && cargo test && yarn deploy:netlify",
+    "deploy:netlify": "netlify deploy --prod --dir 'public/' -s 41700907-7ec4-4be0-9498-8a6e7b52649b"
   },
   "dependencies": {
     "modern-normalize": "^1.0.0"
   },
   "devDependencies": {
     "husky": "^4.3.0",
+    "netlify-cli": "^2.63.3",
     "stylelint": "^13.7.1",
     "stylelint-config-xo-scss": "^0.13.0",
     "stylelint-config-xo-space": "^0.14.0"

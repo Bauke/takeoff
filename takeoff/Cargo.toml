@@ -2,10 +2,11 @@
 
 [package]
 name = "takeoff"
-description = "\"Bring-your-own-site\" static site generator."
+description = "Bring-your-own-site static site generator."
 version = "0.1.0"
 authors = ["Bauke <me@bauke.xyz>"]
 license = "MIT OR Apache-2.0"
+homepage = "https://takeoff.bauke.xyz"
 repository = "https://github.com/Bauke/takeoff"
 edition = "2018"
 
