@@ -24,7 +24,6 @@ You write your own Markdown, HTML, CSS and everything else that makes up the sit
 
 ## Features
 
-* [Live reload](/docs/live-reload)
 * [Markdown rendering](/docs/markdown)
 * [Sass compilation](/docs/sass)
 * [Syntax highlighting](/docs/syntax-highlighting)
